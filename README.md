@@ -6,7 +6,7 @@ Its also easy to use!
 ```php
 require("mdes0.php");
 $mdes = new MDES();
-echo($mdes.text("{#FF0000:Hello Markdown!}"))
+echo($mdes->text("{#FF0000:Hello Markdown!}"))
 ```
 
 ## Link Lists:
