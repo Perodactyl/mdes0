@@ -11,7 +11,9 @@ echo($mdes->text("{#FF0000:Hello Markdown!}"))
 
 ## Link Lists:
 `-a /path/to/file:What the user reads`<br>
-Just don't use a colon in your link. Use `//` if you need HTTPS or HTTP. If you want mailtos and websockets first of all websockets are a bad idea and second of all then I would have to rewrite the regex.
+Just don't use a colon in your link. Use `//` if you need HTTPS or HTTP. If you want mailtos and websockets first of all websockets are a bad idea and second of all then I would have to rewrite the regex.<br>
+`=a /path/to/file:What the user reads`<br>
+The same as before, but it has an <img> leading to `external.svg`. It's an icon that I have a copy of.
 ## Colors!
 `{#hexcodethatcanhavealpha:text}`<br>
 `{:#bgcolor:text}`<br>
