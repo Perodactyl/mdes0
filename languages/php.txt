@@ -1,0 +1,15 @@
+<?php
+/*
+	MarkDown Extension Set 0
+*/
+require("parsedown.php");
+class MDES{
+	public const version = "0.1.0";
+	public function convert($text){
+		$Parsedown = new Parsedown();
+		$text = preg_replace(?1,?2, $text);
+		$text = $Parsedown->text($text);
+		return $text;
+	}
+}
+?>

@@ -1,0 +1,17 @@
+var mdParser = (text)=>{return text}
+if(module){
+	mdParser = require("./showdown").Converter().makeHTML
+}
+var mdes = {
+	parse(text){
+		var regs = ?0
+		Object.keys(regs).forEach((key)=>{
+			text = text.replace(new RegExp(key), regs[key])
+		})
+		text = mdParser
+	}
+}
+
+if(module){
+	module.exports = mdes
+}
