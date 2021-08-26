@@ -1,12 +1,25 @@
 # MarkDown Extension Set 0
-I don't have a V1 yet, but this is pretty handy. It's for PHP though, so if you wanna use it elsewhere you'll have to change it up.<br>
+I don't have a V1 yet, but this is pretty handy. It's being implemented for many langauges, so if you wanna use it elsewhere you can probably check in a version for a language.<br>
 This basically adds a few neat things I use a lot when making webpages.
 
-Its also easy to use!
+Its also easy to use!<br>
+PHP:
 ```php
 require("mdes0.php");
 $mdes = new MDES();
 echo($mdes->text("{#FF0000:Hello Markdown!}"))
+```
+Javascript Client:
+```javascript
+//Earlier use <script src=mdes0.js></script>
+var parsed = mdes.parse("{#FF0000:Hello Markdown!}")
+console.log(parsed)
+```
+Javascript Server:
+```javascript
+var mdes = require("./mdes0.js")
+var parsed = mdes.parse("{#FF0000:Hello Markdown!}")
+console.log(parsed)
 ```
 
 ## Link Lists:
