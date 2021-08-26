@@ -47,4 +47,4 @@ Stuff
 No whitespace inside the parens is needed.
 )
 ```
-That's it for the changes.
+That's it for the changes. If you want to add support for a language, simply create a new file called `language-name.txt` in the `languages` folder. In that file, put whatever code necessary, including any needed packages outside the `languages` folder. Any uses of `?0`, `?1`, and `?2` will be replaced with: A JSON object of the regex as a key and the replacement as a value, a JSON array of the regexes (Keys of `?0`), or a JSON array of the replacements. (Values of `?0`).
